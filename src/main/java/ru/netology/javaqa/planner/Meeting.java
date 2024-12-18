@@ -1,6 +1,6 @@
 package ru.netology.javaqa.planner;
 
-public class Meeting extends Task{
+public class Meeting extends Task {
     protected String topic; //тема
     protected String project; //название проекта
     protected String start; //время начала
@@ -23,6 +23,7 @@ public class Meeting extends Task{
     public String getStart() {
         return start;
     }
+
     @Override
     public boolean matches(String query) {
         if (topic.contains(query)) {

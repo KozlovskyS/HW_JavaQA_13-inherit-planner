@@ -18,6 +18,7 @@ class TaskTest {
 
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
     public void testMatchesSimpleTaskNegative() {
         SimpleTask simpleTask = new SimpleTask(5, "Позвонить");
@@ -42,6 +43,7 @@ class TaskTest {
 
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
     public void testMatchesEpicNegative() {
         String[] subtasks = {"Молоко", "Яйца", "Хлеб"};
@@ -88,6 +90,7 @@ class TaskTest {
 
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
     public void testMatchesMeetingNegative() {
         Meeting meeting = new Meeting(
